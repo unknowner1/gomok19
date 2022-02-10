@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import * as fs from 'fs';
 
 var txt = fs.readFileSync("DB.txt", "utf8");
 console.log(txt);
