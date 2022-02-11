@@ -1,6 +1,4 @@
-function Read(){
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "DB.txt", false);
-    xhr.send();
-    console.log(xhr.responseText);
-}
+import fs from './fs.js';
+
+var data = fs.readFileSync('text.txt', 'uft8');
+console.log(data);
